@@ -1,6 +1,6 @@
 # CASE-STUDY---LOAN-ELIGIBILITY-CHECKER
 This is an introduction of a simple automated loan pre-screening system that manually checks loan eligibility check. It collects customer information, calculate the customer's debt-to-income ratio, calculate a sample monthly repayment, check the customer's eligibility against predefined rules (that are fictitious)
-A Python-based loan pre-screening prototype that evaluates a customer's financial and personal information against predefined eligibility rules. The project combines conditional statements, loops, functions, calculations, Boolean logic, parameters, return values, and variable scope to solve a practical Digital Banking scenario.
+The project combines conditional statements, loops, functions, calculations, Boolean logic, parameters, return values, and variable scope to solve a practical Digital Banking scenario.
 
 Note: This is an educational prototype using fictional rules and data. It is not a real lending or financial decision system.
 
