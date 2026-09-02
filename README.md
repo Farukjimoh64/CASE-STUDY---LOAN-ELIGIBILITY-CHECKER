@@ -1,245 +1,196 @@
 # CASE-STUDY---LOAN-ELIGIBILITY-CHECKER
-This is an introduction of a simple automated loan pre-screening system that manually checks loan eligibility check. It collects customer information, calculate the customer's debt-to-income ratio, calculate a sample monthly repayment, check the customer's eligibility against predefined rules (that are fictitious)
-The project combines conditional statements, loops, functions, calculations, Boolean logic, parameters, return values, and variable scope to solve a practical Digital Banking scenario.
-
-Note: This is an educational prototype using fictional rules and data. It is not a real lending or financial decision system.
-
-## Project Overview
-
-The system simulates the initial screening a financial institution might perform before sending a loan application for further review.
-
-It can:
-
-Collect and validate customer information
-
-Categorise credit scores
-
-Calculate Debt-to-Income Ratio (DTI)
-
-Validate loan amount and repayment term
-
-Check employment and existing-loan status
-
-Determine overall loan eligibility
-
-Estimate monthly repayment
-
-Process multiple applicants using a for loop
-
-Repeatedly request valid input using a while loop
-
-Generate a structured eligibility report
-
-## Process
-
-Customer Information
-        ↓
-Input Validation
-        ↓
-Financial Calculations
-        ↓
-Eligibility Checks
-        ↓
-Final Decision
-        ↓
-Loan Eligibility Report
-
-## Eligibility Rules
-
-An applicant is eligible only when all required conditions are satisfied:
-
-Requirement
-
-Rule
-
-### Age
-
-18–65 years
-
-### Monthly Income
-
-At least ₦150,000
-
-### Credit Score
-
-At least 650
-
-### DTI
-
-40% or less
-
-### Existing Loan
-
-Must have no existing loan
-
-### Employment
-
-Must not be unemployed
-
-### Loan Amount
-
-Greater than ₦0 and up to ₦5,000,000
-
-### Loan Term
-
-6, 12, or 24 months
-
-Credit Score Categories
-
-Score
-
-Category
-
-750+
-
-Excellent
-
-650–749
-
-Good
-
-550–649
-
-Fair
-
-Below 550
-
-Poor
-
-DTI Formula
-
-DTI = (Existing Monthly Debt / Monthly Income) × 100
-
-Monthly Repayment Formula
-
-For this exercise:
-
-Monthly Payment = Loan Amount / Loan Term
-
-Example:
-
-₦1,000,000 / 12 = ₦83,333.33
-
-The repayment formula is intentionally simplified and does not include interest, fees, taxes, or other real-world lending conditions.
-
-## Core Functions
-
-The project uses reusable functions for the main calculations and decision-making:
-
-check_loan_eligibility()
+ Project Overview
+The SmartBank Loan Eligibility Checker is a Python-based educational project designed to simulate a simple automated loan pre-screening system.
+The program evaluates fictional loan applications using predefined eligibility criteria such as:
+•	Customer age
+•	Monthly income
+•	Employment status
+•	Credit score
+•	Existing loan status
+•	Requested loan amount
+•	Loan term
+•	Debt-to-Income (DTI) ratio
+The system processes customer information, validates loan requirements, calculates estimated monthly repayments, and generates a structured loan eligibility report.
+ This project is an educational prototype. It does not represent a real financial lending or credit decision system.
+ 
+ Project Objectives
+This project demonstrates practical application of fundamental Python programming concepts, including:
+•	Variables and data types
+•	Arithmetic operators
+•	Comparison operators
+•	Logical operators
+•	if, elif, and else statements
+•	for loops
+•	while loops
+•	Infinite loops
+•	Functions
+•	Parameters and arguments
+•	Return values
+•	Global and local variable scope
+ 
+ Loan Eligibility Requirements
+A customer is considered eligible only when all the following conditions are satisfied:
+Requirement	Condition
+Age	Between 18 and 65 years
+Monthly Income	At least ₦150,000
+Credit Score	At least 650
+Debt-to-Income Ratio	40% or below
+Existing Loan	Must not have an active loan
+Employment Status	Employed or Self-Employed
+Loan Amount	Greater than ₦0 and not more than ₦5,000,000
+Loan Term	6, 12, or 24 months
+ 
+ Debt-to-Income Calculation
+The Debt-to-Income ratio is calculated using the following formula:
+Debt-to-Income Ratio =
+Existing Monthly Debt / Monthly Income × 100
+Example
+₦70,000 / ₦350,000 × 100 = 20%
+The customer must have a DTI ratio of 40% or below to satisfy the requirement.
+ 
+ Credit Score Categories
+Credit Score	Category
+750 and above	Excellent
+650 – 749	Good
+550 – 649	Fair
+Below 550	Poor
+The minimum required credit score for eligibility is 650.
+ 
+ Features
+The Loan Eligibility Checker can:
+ Validate customer information
+ Validate age requirements
+ Check monthly income eligibility
+ Validate loan amounts
+ Categorize credit scores
+ Calculate Debt-to-Income ratios
+ Check employment status
+ Detect existing loans
+ Validate loan terms
+ Calculate estimated monthly repayments
+ Determine overall loan eligibility
+ Process multiple loan applications
+ Generate structured eligibility reports
+ Demonstrate user input validation using a while loop
+ Demonstrate a controlled infinite loop using while True
+ 
+ Functions Used
 calculate_dti()
+Calculates and returns the customer's Debt-to-Income ratio.
+get_credit_category()
+Determines the customer's credit score category.
+check_loan_eligibility()
+Evaluates all loan requirements and returns the customer's overall eligibility result.
 calculate_monthly_payment()
+Calculates the estimated monthly repayment using:
+Monthly Payment = Loan Amount / Loan Term
+generate_report()
+Generates a detailed and structured loan eligibility report.
+ 
+ Sample Applications
+The program processes four fictional loan applications:
+1.	Daniel Okafor
+2.	Grace Bello
+3.	Samuel Ade
+4.	Anita James
+Each applicant is evaluated against the same eligibility requirements.
+ 
+ Bonus Analysis
+After processing all applications, the program identifies:
+•	Number of eligible applicants
+•	Number of non-eligible applicants
+•	Applicant with the highest credit score
+•	Applicant with the highest monthly income
+•	Applicant with the highest DTI ratio
+•	Applicant with the lowest DTI ratio
+•	Applicants who failed the income requirement
+•	Applicants with existing loans
+•	Applicant with the highest requested loan amount
+ 
+ Example Output
+==================================================
+LOAN ELIGIBILITY REPORT
+SmartBank
+==================================================
 
-These functions demonstrate how Python can separate calculations and business rules into reusable components.
+Customer Name: Daniel Okafor
+Customer ID: CUST001
+Age: 35
+Monthly Income: ₦350,000.00
+Existing Monthly Debt: ₦70,000.00
+Credit Score: 720
+Credit Category: Good
+Loan Amount: ₦1,000,000.00
+Loan Term: 12 Months
 
-## Multiple Applicant Processing
+--------------------------------------------------
+ELIGIBILITY CHECKS
+--------------------------------------------------
 
-The project processes four fictional applications using a for loop:
+Age Requirement: Passed
+Income Requirement: Passed
+Loan Amount: Passed
+Credit Score Requirement: Passed
+Debt-to-Income Requirement: Passed
+Existing Loan Requirement: Passed
+Employment Requirement: Passed
+Loan Term Requirement: Passed
 
-Applicant
+Debt-to-Income Ratio: 20.00%
 
-Income
+--------------------------------------------------
+LOAN CALCULATION
+--------------------------------------------------
 
-DTI
+Estimated Monthly Payment: ₦83,333.33
 
-Credit Score
+--------------------------------------------------
+FINAL RESULT
+--------------------------------------------------
 
-Existing Loan
-
-Daniel Okafor
-
-₦350,000
-
-20%
-
-720
-
-No
-
-Grace Bello
-
-₦500,000
-
-20%
-
-780
-
-No
-
-Samuel Ade
-
-₦120,000
-
-16.67%
-
-700
-
-No
-
-Anita James
-
-₦400,000
-
-50%
-
-680
-
-Yes
-
-## Based on the project rules:
-
-Daniel Okafor: Eligible
-
-Grace Bello: Eligible
-
-Samuel Ade: Not Eligible — income below ₦150,000
-
-Anita James: Not Eligible — DTI above 40% and existing loan
-
-## Python Concepts Demonstrated
-
-Variables and data types
-
-Arithmetic and comparison operators
-
-Boolean logic
-
-if, elif, and else
-
-for loops
-
-while loops
-
-while True and break
-
-Functions
-
-Parameters and arguments
-
-Return values
-
-Local and global variable scope
-
-Structured program output
-
-The project intentionally stays within the concepts required by the study brief and does not use classes, file handling, exception handling, external libraries, or untaught advanced Python concepts.
-
-## Project Purpose
-
-The goal is to demonstrate how fundamental Python concepts can be combined to translate a real-world business problem into a working logical solution.
-
-### The development approach is:
-
-Understand → Plan → Code → Test → Debug → Improve
-
-## Team
-
-Team D
-Python Study Group — Gift II
-Case Study Project #5: Loan Eligibility Checker
-
-## Recognition: 
-SmartBizCrux
-
-## Junior Python Developer 
-JIMOH FARUK
+Loan Eligibility: Eligible
+==================================================
+ 
+ How to Run the Project
+1. Clone the Repository
+git clone https://github.com/YOUR-GITHUB-USERNAME/loan-eligibility-checker.git
+2. Navigate into the Project Folder
+cd loan-eligibility-checker
+3. Run the Program
+python loan_eligibility_checker.py
+ 
+ Technologies Used
+•	Python
+No external libraries were used in this project.
+ 
+ Key Learning Outcomes
+Through this project, I strengthened my understanding of how to transform a real-world scenario into a structured programming solution.
+Some key lessons include:
+•	Breaking large problems into smaller functions
+•	Using logical operators to combine multiple conditions
+•	Writing reusable functions
+•	Processing multiple records with loops
+•	Validating user input
+•	Understanding global and local variable scope
+•	Creating structured and readable program output
+This project helped me move beyond learning individual Python concepts and begin combining them to solve practical problems.
+ 
+ Future Improvements
+Possible future improvements include:
+•	Adding more customer records
+•	Creating a graphical user interface
+•	Saving loan applications to a database
+•	Adding interest rate calculations
+•	Creating a web-based version
+•	Adding advanced input validation
+•	Building an administrative dashboard
+ 
+ Acknowledgements
+Special appreciation to Coach Timothy for the guidance and practical Python learning experience that inspired this project.
+Recognition is also given to SmartBizCrux for supporting practical learning and skill development.
+ 
+ Author
+Jimoh Faruk
+Aspiring Python Developer | Business Professional | Agribusiness Entrepreneur
+I am passionate about continuous learning and applying technology to solve practical business and real-world problems.
+⭐ If you found this project interesting, feel free to star the repository!
