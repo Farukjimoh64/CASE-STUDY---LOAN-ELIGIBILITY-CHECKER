@@ -3,31 +3,31 @@
 ## Project Overview
 The SmartBank Loan Eligibility Checker is a Python-based educational project designed to simulate a simple automated loan pre-screening system.
 The program evaluates fictional loan applications using predefined eligibility criteria such as:
-•	Customer age
-•	Monthly income
-•	Employment status
-•	Credit score
-•	Existing loan status
-•	Requested loan amount
-•	Loan term
-•	Debt-to-Income (DTI) ratio
-The system processes customer information, validates loan requirements, calculates estimated monthly repayments, and generates a structured loan eligibility report.
- This project is an educational prototype. It does not represent a real financial lending or credit decision system.
+* Customer age
+* Monthly income
+* Employment status
+* Credit score
+* Existing loan status
+* Requested loan amount
+* Loan term
+* Debt-to-Income (DTI) ratio
+
+The system processes customer information, validates loan requirements, calculates estimated monthly repayments, and generates a structured loan eligibility report. This project is an educational prototype. It does not represent a real financial lending or credit decision system.
  
 ## Project Objectives
 This project demonstrates practical application of fundamental Python programming concepts, including:
-•	Variables and data types
-•	Arithmetic operators
-•	Comparison operators
-•	Logical operators
-•	if, elif, and else statements
-•	for loops
-•	while loops
-•	Infinite loops
-•	Functions
-•	Parameters and arguments
-•	Return values
-•	Global and local variable scope
+* Variables and data types
+* Arithmetic operators
+* Comparison operators
+* Logical operators
+* if, elif, and else statements
+* for loops
+* while loops
+* Infinite loops
+* Functions
+* Parameters and arguments
+* Return values
+* Global and local variable scope
  
 ## Loan Eligibility Requirements
 A customer is considered eligible only when all the following conditions are satisfied:
@@ -47,7 +47,8 @@ The Debt-to-Income ratio is calculated using the following formula:
 Existing Monthly Debt / Monthly Income × 100
 ```
 Example
-``` ₦70,000 / ₦350,000 × 100 = 20%
+```
+₦70,000 / ₦350,000 × 100 = 20%
 ```
 The customer must have a DTI ratio of 40% or below to satisfy the requirement.
  
@@ -122,47 +123,37 @@ After processing all applications, the program identifies:
 •	Applicant with the highest requested loan amount
  
  ## Example Output
-========================================
-Eligibility Report
-SmartBank
-========================================
-Customer Name: Daniel Okafor
-Customer ID: CUST001
-Age: 35
-Monthly Income: ₦350,000.00
-Existing Monthly Debt: ₦70,000.00
-Credit Score: 720
-Credit Category: Good
-Loan Amount: ₦1,000,000.00
-Loan Term: 12 Months
+===================================
+### Eligibility Report: SmartBank
+* Customer Name: Daniel Okafor
+* Customer ID: CUST001
+* Age: 35
+* Monthly Income: ₦350,000.00
+* Existing Monthly Debt: ₦70,000.00
+* Credit Score: 720
+* Credit Category: Good
+* Loan Amount: ₦1,000,000.00
+* Loan Term: 12 Months
 
-----------------------------------------
-Eligibility Checks
-----------------------------------------
+==================================
+### Eligibility Checks
+* Age Requirement: Passed
+* Income Requirement: Passed
+* Loan Amount: Passed
+* Credit Score Requirement: Passed
+* Debt-to-Income Requirement: Passed
+* Existing Loan Requirement: Passed
+* Employment Requirement: Passed
+* Loan Term Requirement: Passed
+* Debt-to-Income Ratio: 20.00%
 
-Age Requirement: Passed
-Income Requirement: Passed
-Loan Amount: Passed
-Credit Score Requirement: Passed
-Debt-to-Income Requirement: Passed
-Existing Loan Requirement: Passed
-Employment Requirement: Passed
-Loan Term Requirement: Passed
-
-Debt-to-Income Ratio: 20.00%
-
------------------------------------------
-Loan Calculation
------------------------------------------
-
+====================================
+### Loan Calculation
 Estimated Monthly Payment: ₦83,333.33
 
------------------------------------------
-Final Result
------------------------------------------
-
-Loan Eligibility: Eligible
-=========================================
+====================================
+### Final Result
+Loan Eligibility: Eligible 
  
  ## How to Run the Project
 1. Clone the Repository
@@ -173,30 +164,30 @@ cd loan-eligibility-checker
 python loan_eligibility_checker.py
  
  ## Technologies Used
-•	Python
+Python
 No external libraries were used in this project.
  
  ## Key Learning Outcomes
 Through this project, I strengthened my understanding of how to transform a real-world scenario into a structured programming solution.
 Some key lessons include:
-•	Breaking large problems into smaller functions
-•	Using logical operators to combine multiple conditions
-•	Writing reusable functions
-•	Processing multiple records with loops
-•	Validating user input
-•	Understanding global and local variable scope
-•	Creating structured and readable program output
+* Breaking large problems into smaller functions
+* Using logical operators to combine multiple conditions
+* Writing reusable functions
+* Processing multiple records with loops
+* Validating user input
+* Understanding global and local variable scope
+* Creating structured and readable program output
 This project helped me move beyond learning individual Python concepts and begin combining them to solve practical problems.
  
  ## Future Improvements
 Possible future improvements include:
-•	Adding more customer records
-•	Creating a graphical user interface
-•	Saving loan applications to a database
-•	Adding interest rate calculations
-•	Creating a web-based version
-•	Adding advanced input validation
-•	Building an administrative dashboard
+* Adding more customer record
+* Creating a graphical user interface
+* Saving loan applications to a database
+* Adding interest rate calculations
+* Creating a web-based version
+* Adding advanced input validation
+* Building an administrative dashboard
  
  ## Acknowledgements
 Special appreciation to Coach Timothy for the guidance and practical Python learning experience that inspired this project.
@@ -205,5 +196,4 @@ Recognition is also given to SmartBizCrux for supporting practical learning and 
  ## Author
 ### JIMOH FARUK
 **Aspiring Python Developer | Business Professional | Agribusiness Entrepreneur**
-I am passionate about continuous learning and applying technology to solve practical business and real-world problems.
-⭐ If you found this project interesting, feel free to star the repository!
+* I am passionate about continuous learning and applying technology to solve practical business and real-world problems. If you found this project interesting, feel free to star the repository!
