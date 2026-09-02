@@ -1,6 +1,6 @@
-# CASE-STUDY- LOAN-ELIGIBILITY CHECKER
+# CASE-STUDY: LOAN-ELIGIBILITY CHECKER
  
- ## Project Overview
+## Project Overview
 The SmartBank Loan Eligibility Checker is a Python-based educational project designed to simulate a simple automated loan pre-screening system.
 The program evaluates fictional loan applications using predefined eligibility criteria such as:
 •	Customer age
@@ -14,7 +14,7 @@ The program evaluates fictional loan applications using predefined eligibility c
 The system processes customer information, validates loan requirements, calculates estimated monthly repayments, and generates a structured loan eligibility report.
  This project is an educational prototype. It does not represent a real financial lending or credit decision system.
  
- ## Project Objectives
+## Project Objectives
 This project demonstrates practical application of fundamental Python programming concepts, including:
 •	Variables and data types
 •	Arithmetic operators
@@ -29,65 +29,78 @@ This project demonstrates practical application of fundamental Python programmin
 •	Return values
 •	Global and local variable scope
  
- ## Loan Eligibility Requirements
+## Loan Eligibility Requirements
 A customer is considered eligible only when all the following conditions are satisfied:
-Requirement	Condition
-Age	Between 18 and 65 years
-Monthly Income	At least ₦150,000
-Credit Score	At least 650
-Debt-to-Income Ratio	40% or below
-Existing Loan	Must not have an active loan
-Employment Status	Employed or Self-Employed
-Loan Amount	Greater than ₦0 and not more than ₦5,000,000
-Loan Term	6, 12, or 24 months
+* Requirement	Condition
+* Age	Between 18 and 65 years
+* Monthly Income	At least ₦150,000
+* Credit Score	At least 650
+* Debt-to-Income Ratio	40% or below
+* Existing Loan	Must not have an active loan
+* Employment Status	Employed or Self-Employed
+* Loan Amount	Greater than ₦0 and not more than ₦5,000,000
+* Loan Term	6, 12, or 24 months
  
- ## Debt-to-Income Calculation
+## Debt-to-Income Calculation
 The Debt-to-Income ratio is calculated using the following formula:
-Debt-to-Income Ratio =
+``` Debt-to-Income Ratio =
 Existing Monthly Debt / Monthly Income × 100
+```
 Example
-₦70,000 / ₦350,000 × 100 = 20%
+``` ₦70,000 / ₦350,000 × 100 = 20%
+```
 The customer must have a DTI ratio of 40% or below to satisfy the requirement.
  
- ## Credit Score Categories
-Credit Score	Category
+## Credit Score Categories
+#### Credit Score	Category
+```
 750 and above	Excellent
 650 – 749	Good
 550 – 649	Fair
 Below 550	Poor
+```
 The minimum required credit score for eligibility is 650.
  
- ## Features
-The Loan Eligibility Checker can:
- Validate customer information
- Validate age requirements
- Check monthly income eligibility
- Validate loan amounts
- Categorize credit scores
- Calculate Debt-to-Income ratios
- Check employment status
- Detect existing loans
- Validate loan terms
- Calculate estimated monthly repayments
- Determine overall loan eligibility
- Process multiple loan applications
- Generate structured eligibility reports
- Demonstrate user input validation using a while loop
- Demonstrate a controlled infinite loop using while True
+## Features
+* The Loan Eligibility Checker can:
+* Validate customer information
+* Validate age requirements
+* Check monthly income eligibility
+* Validate loan amounts
+* Categorize credit scores
+* Calculate Debt-to-Income ratios
+* Check employment status
+* Detect existing loans
+* Validate loan terms
+* Calculate estimated monthly repayments
+* Determine overall loan eligibility
+* Process multiple loan applications
+* Generate structured eligibility reports
+* Demonstrate user input validation using a while loop
+* Demonstrate a controlled infinite loop using while True
  
  ## Functions Used
+```
 calculate_dti()
 Calculates and returns the customer's Debt-to-Income ratio.
+```
+```
 get_credit_category()
 Determines the customer's credit score category.
+```
+```
 check_loan_eligibility()
 Evaluates all loan requirements and returns the customer's overall eligibility result.
+```
+```
 calculate_monthly_payment()
 Calculates the estimated monthly repayment using:
 Monthly Payment = Loan Amount / Loan Term
+```
+```
 generate_report()
 Generates a detailed and structured loan eligibility report.
- 
+``` 
  ## Sample Applications
 The program processes four fictional loan applications:
 1.	Daniel Okafor
@@ -109,11 +122,10 @@ After processing all applications, the program identifies:
 •	Applicant with the highest requested loan amount
  
  ## Example Output
-==================================================
-LOAN ELIGIBILITY REPORT
+========================================
+Eligibility Report
 SmartBank
-==================================================
-
+========================================
 Customer Name: Daniel Okafor
 Customer ID: CUST001
 Age: 35
@@ -124,9 +136,9 @@ Credit Category: Good
 Loan Amount: ₦1,000,000.00
 Loan Term: 12 Months
 
---------------------------------------------------
-ELIGIBILITY CHECKS
---------------------------------------------------
+----------------------------------------
+Eligibility Checks
+----------------------------------------
 
 Age Requirement: Passed
 Income Requirement: Passed
@@ -139,18 +151,18 @@ Loan Term Requirement: Passed
 
 Debt-to-Income Ratio: 20.00%
 
---------------------------------------------------
-LOAN CALCULATION
---------------------------------------------------
+-----------------------------------------
+Loan Calculation
+-----------------------------------------
 
 Estimated Monthly Payment: ₦83,333.33
 
---------------------------------------------------
-FINAL RESULT
---------------------------------------------------
+-----------------------------------------
+Final Result
+-----------------------------------------
 
 Loan Eligibility: Eligible
-==================================================
+=========================================
  
  ## How to Run the Project
 1. Clone the Repository
@@ -191,7 +203,7 @@ Special appreciation to Coach Timothy for the guidance and practical Python lear
 Recognition is also given to SmartBizCrux for supporting practical learning and skill development.
  
  ## Author
-Jimoh Faruk
-Aspiring Python Developer | Business Professional | Agribusiness Entrepreneur
+### JIMOH FARUK
+**Aspiring Python Developer | Business Professional | Agribusiness Entrepreneur**
 I am passionate about continuous learning and applying technology to solve practical business and real-world problems.
 ⭐ If you found this project interesting, feel free to star the repository!
