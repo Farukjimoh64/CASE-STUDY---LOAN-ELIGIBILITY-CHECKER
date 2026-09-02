@@ -1,5 +1,6 @@
-# CASE-STUDY---LOAN-ELIGIBILITY-CHECKER
- Project Overview
+# CASE-STUDY- LOAN-ELIGIBILITY CHECKER
+ 
+ ## Project Overview
 The SmartBank Loan Eligibility Checker is a Python-based educational project designed to simulate a simple automated loan pre-screening system.
 The program evaluates fictional loan applications using predefined eligibility criteria such as:
 •	Customer age
@@ -13,7 +14,7 @@ The program evaluates fictional loan applications using predefined eligibility c
 The system processes customer information, validates loan requirements, calculates estimated monthly repayments, and generates a structured loan eligibility report.
  This project is an educational prototype. It does not represent a real financial lending or credit decision system.
  
- Project Objectives
+ ## Project Objectives
 This project demonstrates practical application of fundamental Python programming concepts, including:
 •	Variables and data types
 •	Arithmetic operators
@@ -28,7 +29,7 @@ This project demonstrates practical application of fundamental Python programmin
 •	Return values
 •	Global and local variable scope
  
- Loan Eligibility Requirements
+ ## Loan Eligibility Requirements
 A customer is considered eligible only when all the following conditions are satisfied:
 Requirement	Condition
 Age	Between 18 and 65 years
@@ -40,7 +41,7 @@ Employment Status	Employed or Self-Employed
 Loan Amount	Greater than ₦0 and not more than ₦5,000,000
 Loan Term	6, 12, or 24 months
  
- Debt-to-Income Calculation
+ ## Debt-to-Income Calculation
 The Debt-to-Income ratio is calculated using the following formula:
 Debt-to-Income Ratio =
 Existing Monthly Debt / Monthly Income × 100
@@ -48,7 +49,7 @@ Example
 ₦70,000 / ₦350,000 × 100 = 20%
 The customer must have a DTI ratio of 40% or below to satisfy the requirement.
  
- Credit Score Categories
+ ## Credit Score Categories
 Credit Score	Category
 750 and above	Excellent
 650 – 749	Good
@@ -56,7 +57,7 @@ Credit Score	Category
 Below 550	Poor
 The minimum required credit score for eligibility is 650.
  
- Features
+ ## Features
 The Loan Eligibility Checker can:
  Validate customer information
  Validate age requirements
@@ -74,7 +75,7 @@ The Loan Eligibility Checker can:
  Demonstrate user input validation using a while loop
  Demonstrate a controlled infinite loop using while True
  
- Functions Used
+ ## Functions Used
 calculate_dti()
 Calculates and returns the customer's Debt-to-Income ratio.
 get_credit_category()
@@ -87,7 +88,7 @@ Monthly Payment = Loan Amount / Loan Term
 generate_report()
 Generates a detailed and structured loan eligibility report.
  
- Sample Applications
+ ## Sample Applications
 The program processes four fictional loan applications:
 1.	Daniel Okafor
 2.	Grace Bello
@@ -95,7 +96,7 @@ The program processes four fictional loan applications:
 4.	Anita James
 Each applicant is evaluated against the same eligibility requirements.
  
- Bonus Analysis
+ ## Bonus Analysis
 After processing all applications, the program identifies:
 •	Number of eligible applicants
 •	Number of non-eligible applicants
@@ -107,7 +108,7 @@ After processing all applications, the program identifies:
 •	Applicants with existing loans
 •	Applicant with the highest requested loan amount
  
- Example Output
+ ## Example Output
 ==================================================
 LOAN ELIGIBILITY REPORT
 SmartBank
@@ -151,7 +152,7 @@ FINAL RESULT
 Loan Eligibility: Eligible
 ==================================================
  
- How to Run the Project
+ ## How to Run the Project
 1. Clone the Repository
 git clone https://github.com/YOUR-GITHUB-USERNAME/loan-eligibility-checker.git
 2. Navigate into the Project Folder
@@ -159,11 +160,11 @@ cd loan-eligibility-checker
 3. Run the Program
 python loan_eligibility_checker.py
  
- Technologies Used
+ ## Technologies Used
 •	Python
 No external libraries were used in this project.
  
- Key Learning Outcomes
+ ## Key Learning Outcomes
 Through this project, I strengthened my understanding of how to transform a real-world scenario into a structured programming solution.
 Some key lessons include:
 •	Breaking large problems into smaller functions
@@ -175,7 +176,7 @@ Some key lessons include:
 •	Creating structured and readable program output
 This project helped me move beyond learning individual Python concepts and begin combining them to solve practical problems.
  
- Future Improvements
+ ## Future Improvements
 Possible future improvements include:
 •	Adding more customer records
 •	Creating a graphical user interface
@@ -185,11 +186,11 @@ Possible future improvements include:
 •	Adding advanced input validation
 •	Building an administrative dashboard
  
- Acknowledgements
+ ## Acknowledgements
 Special appreciation to Coach Timothy for the guidance and practical Python learning experience that inspired this project.
 Recognition is also given to SmartBizCrux for supporting practical learning and skill development.
  
- Author
+ ## Author
 Jimoh Faruk
 Aspiring Python Developer | Business Professional | Agribusiness Entrepreneur
 I am passionate about continuous learning and applying technology to solve practical business and real-world problems.
